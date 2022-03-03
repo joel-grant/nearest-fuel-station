@@ -1,0 +1,9 @@
+<%= @fuel_station.name %>
+<%= @fuel_station.address %>
+<%= @fuel_station.fuel_type %>
+<%= @fuel_station.access_times %>
+Distance: <%= @directions.distance %>
+Travel Time: <%= @directions.travel_time %>
+<p>Directions: <% @directions.narrative.each do |leg| %></p>
+  <%= leg %>
+<% end %>
